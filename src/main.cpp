@@ -12,6 +12,15 @@ int main() {
     cout << endl;
 
     do {
+    cout << "Enter score 1: ";
+    cin >> score1;
+
+    if (!isValidScore(score1)) {
+        cout << "Invalid score. Enter a score from 0 to 100: " << endl;
+    }
+} while (!isValidScore(score1));
+
+    do {
     cout << "Enter score 2: ";
     cin >> score2;
 
@@ -19,15 +28,6 @@ int main() {
         cout << "Invalid score. Enter a score from 0 to 100: " << endl;
     }
 } while (!isValidScore(score2));
-
-    do {
-    cout << "Enter score 3: ";
-    cin >> score3;
-
-    if (!isValidScore(score3)) {
-        cout << "Invalid score. Enter a score from 0 to 100: " << endl;
-    }
-} while (!isValidScore(score3));
 do {
     cout << "Enter score 3: ";
     cin >> score3;
