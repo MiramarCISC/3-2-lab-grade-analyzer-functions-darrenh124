@@ -40,21 +40,24 @@ else
 
 bool isPassing(double average) {
     // TODO: Return true when average is 70 or higher.
-    if (average >= 70) {return true;}
-    else {
-    return false;
+    if (average >= 70){
+        return true;
+    }
+    return false;                           // Dont need a else statment for this because if it dosent meet the condition it will just return false
 }
-}
+
 
 bool isValidScore(double score) 
     // TODO: Return true when score is between 0 and 100, inclusive.
   {
-        if (score >= 0 && score <= 100) {return true;}
-        else 
-        {return false;
+        if (score >= 0 && score <= 100){
+            return true;
+        }
+         
+        return false;                       // Same thing here
 
     }
-  }
+  
 
 void printGradeReport(double total, double average, char letterGrade, bool passing) {
     cout << endl;
