@@ -28,13 +28,14 @@ char determineLetterGrade(double average) {
     else if (average >= 80) {
         return 'B'; 
     }
-    else if (average >=70) {
+    else if (average >= 70) {
         return 'C';
     }
     else if (average >= 60) {
         return 'D';
     }
-    else {
+    // Darren: Optional to add the else, but is not necessary 
+    {
         return 'F';
     }
 }
